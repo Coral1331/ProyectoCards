@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #21201E;
+    color: #333;
+    text-decoration: none;
+    background-color: #21201E;
+    font-family: "JetBrains Mono", serif;
+}
+
+h3, p, a{
+    margin: 0;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;}
+
+    
+/* Cabecero Navegación */
+header{
+    background: #0e0d0c;
+    color: #FFFBF4;
+    padding: 5px;
+    border: solid 2px #FFFBF4;
+          
+}
+
+/* Travelers */ 
+header .logo{
+    margin: 0;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: #5d9440;
+    font-size: x-large;
+    }
+
+   
+.logo{ 
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #FFFBF4;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.navbar{
+    float: right;
+    text-decoration: none;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    margin: 5px;
+}
+
+.navbar a{
+    color: #FFFBF4;
+    text-decoration: none;
+    font-weight:lighter;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover{
+    color: #88db5b;
+}
+
+/* Cartitas */
+.card{
+    background: #FFFBF4;
+    border: 2px solid #21201E;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 #000;
+    padding: 16px;
+    text-align: center;
+    margin: 16px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;    
+}
+
+.card:hover{
+    box-shadow:#5d9440;
+    transform: translateY(-3%);
+}
+
+.card img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 3px solid #5d9440;
+}
+
+
+.card h3{
+    font-size: 25px;
+    color: #21201E;
+    margin: 15px 0;
+}
+
+.card p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.card a{
+    margin-top: 16px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFBF4;
+    background: #0e0d0c;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card a:hover{
+    background:  #5d9440;
+}
+
+/* Question Debugging */
+#quest-debug{
+    text-align: center;
+    margin: 26px 0;
+}
+
+#quest-debug h3{
+    font-size: 25px;
+    color: #5d9440;
+    
+}
+
+#quest-debug button{
+    padding: 10px 15px;
+    margin-top: 12px;
+    background: #0e0d0c;
+    border: solid 2px #FFFBF4;
+    color: #FFFBF4;
+    border-radius: 5px;
+    font-family: "JetBrains Mono", serif;
+    font-size: 15px;
+    cursor:crosshair;
+    transition: background 0.3s ease;
+    
+}
+
+#quest-debug button:hover{
+    background: #5d9440;
+}
+
+/* Footer */
+footer{
+    background: #0e0d0c;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    border: solid 2px #FFFBF4;
+}
+
+footer p{
+    margin: 0;
+}
+
+/* Media Movidas */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    #quest-debug h3 {
+        font-size: 24px;
+    }
+}
