@@ -182,7 +182,7 @@ footer p{
     margin: 0;
 }
 
-/* Media Movidas */
+/* Media Movidas prueba commit */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
